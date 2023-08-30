@@ -4,6 +4,10 @@ const app = express()
 const path = require('path')
 const basePath = path.join(__dirname, 'templates')
 
+app.get('/usuarios/cadastrar', (req, res) => {
+    res.sendFile(`${basePath}/form.html`)
+})
+
 app.get('/usuarios/:id', (req, res) => {
     const id = req.params.id
 
