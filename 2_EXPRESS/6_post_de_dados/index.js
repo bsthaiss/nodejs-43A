@@ -12,6 +12,10 @@ app.use(express.urlencoded({
 // Converte em objeto do JS
 app.use(express.json())
 
+
+// Utilizar arquivos estáticos como CSS
+app.use(express.static('public'))
+
 app.post('/usuarios/enviar', (req, res) => {
     const nome = req.body.nome
     const email = req.body.email
