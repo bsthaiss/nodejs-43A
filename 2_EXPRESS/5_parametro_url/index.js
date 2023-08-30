@@ -4,7 +4,7 @@ const { get } = require('http')
 const app = express()
 
 const path = require('path')
-const caminho = path.join(__dirname, 'templates')
+const basePath = path.join(__dirname, 'templates')
 
 app.get('/usuarios/:id', (req, res) => {
     const id = req.params.id
