@@ -12,7 +12,7 @@ app.get('/usuarios/:id', (req, res) => {
     res.sendFile(`${basePath}/usuarios.html`)
 })
 
-app;get('/', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(`${basePath}/index.html`)
 })
 
