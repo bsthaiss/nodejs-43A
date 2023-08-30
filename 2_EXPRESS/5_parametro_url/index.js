@@ -1,6 +1,4 @@
-const { application } = require('express')
 const express = require('express')
-const { get } = require('http')
 const app = express()
 
 const path = require('path')
