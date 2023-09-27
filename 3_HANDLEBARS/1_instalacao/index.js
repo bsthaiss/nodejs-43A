@@ -4,3 +4,4 @@ const exphbs = require("express-handlebars")
 const app = express()
 
 // Configurando o handlebars com o template engine
+app.engine('handlebars', exphbs.engine())
